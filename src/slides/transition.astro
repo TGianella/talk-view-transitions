@@ -1,0 +1,28 @@
+---
+import initialState from "../assets/initial_state.png"
+import finalState from "../assets/final_state.png"
+import Slide from "../components/Slide.astro";
+---
+
+<Slide>
+	<h2>Captures du DOM</h2>
+	<img class="fragment" src={initialState.src} />
+	<img class="fragment" src={finalState.src} />
+</Slide>
+
+<style>
+	img {
+		max-width: 24vw;
+
+		&:first-of-type {
+			position: relative;
+			left: -2vw
+		}
+
+		&:last-of-type {
+			position: relative;
+			right: -2vw;
+		}
+	}
+</style>
+

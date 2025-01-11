@@ -1,0 +1,39 @@
+---
+import Slide from "../components/Slide.astro";
+import Initial from "../assets/initial-state-header.png"
+import Final from "../assets/final-state-header.png"
+import Code from "../assets/view-transition-name-header.svg"
+---
+
+<Slide>
+	<h2>view-transition-name</h2>
+	<div class="r-stack">
+		<div class="fragment fade-in-then-out">
+			<img src={Initial.src} />
+			<img src={Final.src} />
+		</div>
+		<img class="fragment" src={Code.src} />
+	</div>
+
+
+</Slide>
+
+<style>
+	img:not(.fragment) {
+		max-width: 20vw;
+
+		&:first-of-type {
+			position: relative;
+			left: -2vw
+		}
+
+		&:last-of-type {
+			position: relative;
+			right: -2vw;
+		}
+	}
+
+	img.fragment {
+		width: 50vw;
+	}
+</style>

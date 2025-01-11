@@ -1,0 +1,19 @@
+---
+import Slide from "../components/Slide.astro";
+---
+
+<Slide>
+  <h2>Comment ça fonctionne</h2>
+</Slide>
+
+<Slide>
+  <h2>Comment ça fonctionne</h2>
+	<p class="fragment">Au déclenchement de la transition :</p>
+  <ol>
+		<li class="fragment">Le rendu graphique est interrompu</li>
+    <li class="fragment">Capture de l'état initial</li>
+    <li class="fragment">Exécution de la modification du DOM</li>
+    <li class="fragment">Capture de l'état final</li>
+    <li class="fragment">Animation entre l'état initial et l'état final</li>
+  </ol>
+</Slide>

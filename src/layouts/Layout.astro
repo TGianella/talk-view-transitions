@@ -40,8 +40,16 @@ const { title } = Astro.props;
 	@import "reveal.js/dist/theme/night.css";
 	@import "../../src/styles/highlightjs-theme-vs2015.css";
 
-	main,
-	.slide-background-content {
-		background: linear-gradient(#133055, #0c1a2a);
+	:root {
+		--r-background-color: #ffffff;
+		--r-main-color: black;
+		--r-heading-color: black;
+		--r-heading2-size: 1.75em;
 	}
+
+	li {
+		margin-block: 1vh;
+	}
+
+
 </style>
