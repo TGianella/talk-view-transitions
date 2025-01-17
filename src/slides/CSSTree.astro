@@ -1,18 +1,22 @@
 ---
-import Tree from "../assets/css-tree.svg";
 import Slide from "../components/Slide.astro";
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 
 <Slide>
 	<h2>Un arbre de pseudo-éléments</h2>
-	<img src={Tree.src} />
+	<CodeBlock lang="CSS" lines="|1|2|3|4-5">
+		{
+			`::view-transition
+└── ::view-transition-group(root)
+		└── ::view-transition-image-pair(root)
+				├── ::view-transition-old(root)
+				└── ::view-transition-new(root)`
+		}
+	</CodeBlock>
 </Slide>
 
 <style>
-	img {
-		width: 80vw;
-	}
-
 	h2 {
 		font-size: 1.61em;
 	}

@@ -1,16 +1,17 @@
 ---
-import Feature from "../assets/feature-name-code.svg";
 import Slide from "../components/Slide.astro";
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 
 <Slide>
 	<h2>Un nom : un élément</h2>
 	<p class="fragment">(mais pas nécessairement le même avant et après)</p>
-	<img src={Feature.src} />
+	<CodeBlock lang="jsx" lines="|2|3">
+		{
+			`<div
+	className="card feature"
+	style={{ viewTransitionName:\`card-\${color}\` }}>
+</div>`
+		}
+	</CodeBlock>
 </Slide>
-
-<style>
-	img {
-		width: 80vw;
-	}
-</style>

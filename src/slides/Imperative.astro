@@ -1,6 +1,6 @@
 ---
 import Slide from "../components/Slide.astro";
-import Code from "../assets/carbon.svg"
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 <Slide>
 	<h2>Utiliser la viewTransition en SPA</h2>
@@ -8,14 +8,14 @@ import Code from "../assets/carbon.svg"
 
 <Slide>
 	<h2>Utiliser la viewTransition en SPA</h2>
-	<img src={Code.src} />
+	<CodeBlock lang="javascript">
+		{
+			`document.startViewTransition(updateTheDOM);`
+		}
+	</CodeBlock>
 </Slide>
 
 <style>
-	img {
-		width: 80vw;
-	}
-
 	h2 {
 		font-size: 1.4em;
 	}

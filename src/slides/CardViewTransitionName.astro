@@ -1,15 +1,16 @@
 ---
-import Card from "../assets/card-name-code.svg";
 import Slide from "../components/Slide.astro";
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 
 <Slide>
 	<h2>Un nom : un élément</h2>
-	<img src={Card.src} />
+	<CodeBlock lang="jsx" lines="|3">
+		{
+			`<div
+	className="card"
+	style={{ viewTransitionName:\`card-\${color}\` }}>
+</div>`
+		}
+	</CodeBlock>
 </Slide>
-
-<style>
-	img {
-		width: 80vw;
-	}
-</style>

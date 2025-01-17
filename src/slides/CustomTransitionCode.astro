@@ -1,18 +1,26 @@
 ---
-import Custom from "../assets/custom-transition-code.svg";
 import Slide from "../components/Slide.astro";
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 
 <Slide>
 	<h2>Personnaliser les animations</h2>
-	<img src={Custom.src} />
+	<CodeBlock lang="CSS">
+		{
+			`::view-transition-old(root) {
+	animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+	300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+::view-transition-new(root) {
+	animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+	300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}`
+		}
+	</CodeBlock>
 </Slide>
 
 <style>
-	img {
-		width: 80vw;
-	}
-
 	h2 {
 		font-size: 1.61em;
 	}

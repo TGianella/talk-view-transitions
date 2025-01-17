@@ -1,15 +1,20 @@
 ---
-import Progressive from "../assets/progressive.svg";
 import Slide from "../components/Slide.astro";
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 
 <Slide>
 	<h2>Amélioration progressive</h2>
-	<img src={Progressive.src} />
-</Slide>
+	<CodeBlock lang="javascript" lines="|1-4|6-8">
+		{
+			`if (!document.startViewTransition) {
+    await updateTheDOM(data);
+    return;
+}
 
-<style>
-	img {
-		width: 80vw;
-	}
-</style>
+const transition = document.startViewTransition(async () => {
+    await updateTheDOM(data);
+});`
+		}
+	</CodeBlock>
+</Slide>

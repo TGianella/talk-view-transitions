@@ -1,15 +1,21 @@
 ---
-import Lifecycle from "../assets/lifecycle.svg";
 import Slide from "../components/Slide.astro";
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 
 <Slide>
 	<h2>L'objet ViewTransition</h2>
-	<img src={Lifecycle.src} />
-</Slide>
+	<CodeBlock lang="javascript" lines="|2|4|6|7">
+		{
+			`const showProduct = () => {
+	setupViewTransitionNames();
 
-<style>
-	img {
-		width: 80vw;
-	}
-</style>
+	const transition = document.startViewTransition(updateTheDOM);
+
+	transition.finished.then(() => {
+		removeViewTransitionNames();
+	};
+});`
+		}
+	</CodeBlock>
+</Slide>

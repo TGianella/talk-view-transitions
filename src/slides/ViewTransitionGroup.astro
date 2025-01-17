@@ -1,15 +1,17 @@
 ---
-import Group from "../assets/view-transition-group.svg";
 import Slide from "../components/Slide.astro";
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 
 <Slide>
 	<h2>: : view-transition-group</h2>
-	<img src={Group.src} />
+	<CodeBlock lang="CSS" lines="|2-3|4-5">
+		{
+			`::view-transition
+├── ::view-transition-group(root)
+│   └── ...
+└── ::view-transition-group(header)
+    └── ...`
+		}
+	</CodeBlock>
 </Slide>
-
-<style>
-	img {
-		width: 50vw;
-	}
-</style>

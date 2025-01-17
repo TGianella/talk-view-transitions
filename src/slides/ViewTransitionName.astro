@@ -2,7 +2,7 @@
 import Slide from "../components/Slide.astro";
 import Initial from "../assets/initial-state-header.png"
 import Final from "../assets/final-state-header.png"
-import Code from "../assets/view-transition-name-header.svg"
+import CodeBlock from "../components/CodeBlock.astro";
 ---
 
 <Slide>
@@ -12,10 +12,16 @@ import Code from "../assets/view-transition-name-header.svg"
 			<img src={Initial.src} />
 			<img src={Final.src} />
 		</div>
-		<img class="fragment" src={Code.src} />
+		<div class="fragment">
+			<CodeBlock lang="css">
+				{
+					`header {
+	view-transition-name: header;
+}`
+				}
+			</CodeBlock>
+		</div>
 	</div>
-
-
 </Slide>
 
 <style>
