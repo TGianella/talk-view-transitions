@@ -1,42 +1,43 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Title from "../slides/Title.astro";
-import WhyAstro from "../slides/Definition.astro";
-import DemoIntro from "../slides/DemoIntro.astro";
-import Principles from "../slides/Principles.astro";
-import Why from "../slides/why.astro";
-import Transition from "../slides/transition.astro";
-import DemoNoTransition from "../slides/DemoNoTransition.astro";
-import DemoDefaultTransition from "../slides/DemoDefaultTransition.astro";
-import Imperative from "../slides/Imperative.astro";
-import DemoCustomTransition from "../slides/DemoCustomTransition.astro";
-import ViewTransitionName from "../slides/ViewTransitionName.astro";
-import Baseline from "../slides/Baseline.astro";
-import ProgressiveEnhancement from "../slides/ProgressiveEnhancement.astro";
-import CSSTree from "../slides/CSSTree.astro";
-import NamesEverywhere from "../slides/NamesEverywhere.astro";
-import DemoTransitionHeader from "../slides/DemoTransitionHeader.astro";
-import ViewTransitionGroup from "../slides/ViewTransitionGroup.astro";
-import DemoTransitionCards from "../slides/DemoTransitionCards.astro";
-import DemoTransitionFeature from "../slides/DemoTransitionFeature.astro";
-import DemoTransitionMPA from "../slides/DemoTransitionMPA.astro";
-import CustomTransitionCode from "../slides/CustomTransitionCode.astro";
-import CardViewTransitionName from "../slides/CardViewTransitionName.astro";
-import FeatureViewTransitionName from "../slides/FeatureViewTransitionName.astro";
-import NamesGuidelines from "../slides/NamesGuidelines.astro";
-import Lifecycle from "../slides/Lifecycle.astro";
-import Declarative from "../slides/Declarative.astro";
-import Frameworks from "../slides/Frameworks.astro";
-import PlotTwist from "../slides/PlotTwist.astro";
-import Perspectives from "../slides/Perspectives.astro";
-import CustomTransitionQueries from "../slides/CustomTransitionQueries.astro";
-import End from "../slides/End.astro";
-import Spa from "../slides/Spa.astro";
+import Title from "../slides/1-Introduction/Title.astro";
+import WhyAstro from "../slides/1-Introduction/Definition.astro";
+import DemoIntro from "../slides/1-Introduction/DemoIntro.astro";
+import Principles from "../slides/1-Introduction/Principles.astro";
+import Why from "../slides/1-Introduction/why.astro";
+import Transition from "../slides/1-Introduction/transition.astro";
+import DemoNoTransition from "../slides/1-Introduction/DemoNoTransition.astro";
+import DemoDefaultTransition from "../slides/2-SPA/DemoDefaultTransition.astro";
+import Imperative from "../slides/2-SPA/Imperative.astro";
+import DemoCustomTransition from "../slides/2-SPA/DemoCustomTransition.astro";
+import ViewTransitionName from "../slides/2-SPA/ViewTransitionName.astro";
+import Baseline from "../slides/4-Conclusion/Baseline.astro";
+import ProgressiveEnhancement from "../slides/4-Conclusion/ProgressiveEnhancement.astro";
+import CSSTree from "../slides/2-SPA/CSSTree.astro";
+import NamesEverywhere from "../slides/2-SPA/NamesEverywhere.astro";
+import DemoTransitionHeader from "../slides/2-SPA/DemoTransitionHeader.astro";
+import ViewTransitionGroup from "../slides/2-SPA/ViewTransitionGroup.astro";
+import DemoTransitionCards from "../slides/2-SPA/DemoTransitionCards.astro";
+import DemoTransitionFeature from "../slides/2-SPA/DemoTransitionFeature.astro";
+import DemoTransitionMPA from "../slides/3-MPA/DemoTransitionMPA.astro";
+import CustomTransitionCode from "../slides/2-SPA/CustomTransitionCode.astro";
+import CardViewTransitionName from "../slides/2-SPA/CardViewTransitionName.astro";
+import FeatureViewTransitionName from "../slides/2-SPA/FeatureViewTransitionName.astro";
+import NamesGuidelines from "../slides/2-SPA/NamesGuidelines.astro";
+import Lifecycle from "../slides/2-SPA/Lifecycle.astro";
+import Declarative from "../slides/3-MPA/Declarative.astro";
+import Frameworks from "../slides/4-Conclusion/Frameworks.astro";
+import PlotTwist from "../slides/4-Conclusion/PlotTwist.astro";
+import Perspectives from "../slides/4-Conclusion/Perspectives.astro";
+import CustomTransitionQueries from "../slides/2-SPA/CustomTransitionQueries.astro";
+import End from "../slides/4-Conclusion/End.astro";
+import Spa from "../slides/1-Introduction/Spa.astro";
 ---
 
 <Layout title="L'API viewTransition : une révolution pour le web ?">
 	<main class="reveal">
 		<div class="slides">
+			<!-- Intro -->
 			<Title />
 			<WhyAstro />
 			<Spa />
@@ -45,6 +46,7 @@ import Spa from "../slides/Spa.astro";
 			<Principles />
 			<Transition />
 			<DemoNoTransition />
+			<!-- 1. SPA -->
 			<Imperative />
 			<DemoDefaultTransition />
 			<CSSTree />
@@ -61,8 +63,10 @@ import Spa from "../slides/Spa.astro";
 			<Lifecycle />
 			<FeatureViewTransitionName />
 			<DemoTransitionFeature />
+			<!-- 2. MPA -->
 			<Declarative />
 			<DemoTransitionMPA />
+			<!-- Conclusion -->
 			<Baseline />
 			<ProgressiveEnhancement />
 			<Frameworks />
