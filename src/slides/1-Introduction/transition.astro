@@ -2,27 +2,49 @@
 import initialState from "../../assets/initial_state.png"
 import finalState from "../../assets/final_state.png"
 import Slide from "../../components/Slide.astro";
+import CodeBlock from "../../components/CodeBlock.astro";
 ---
 
 <Slide>
 	<h2>Captures du DOM</h2>
-	<img class="fragment" src={initialState.src} />
-	<img class="fragment" src={finalState.src} />
+	<div class="r-stack">
+		<img class="fragment fade-in-then-out" src={initialState.src} />
+		<img class="fragment fade-in-then-out" src={finalState.src} />
+		<div class="fragment fade-in-then-out">
+			<CodeBlock lang="HTML">
+				{
+					`<div class="cards-list">
+	<div class="card" style="background: #E59292;"></div>
+	<div class="card" style="background: #CCE592;"></div>
+	<div class="card" style="background: #92D7E5;"></div>
+	<div class="card" style="background: #92E5C5;"></div>
+	<div class="card" style="background: #DA92E5;"></div>
+	<div class="card" style="background: #A192E5;"></div>
+	<div class="card" style="background: #E5B692;"></div>
+	<div class="card" style="background: #92E592;"></div>
+</div>`
+				}
+			</CodeBlock>
+		</div>
+		<div class="fragment">
+			<CodeBlock lang="HTML">
+				{
+					`<div class="feature-list">
+	<div class="card feature" style="background: #E59292;"></div>
+	<div class="card" style="background: #CCE592;"></div>
+	<div class="card" style="background: #92D7E5;"></div>
+	<div class="card" style="background: #92E5C5;"></div>
+	<div class="card" style="background: #DA92E5;"></div>
+</div>`
+				}
+			</CodeBlock>
+		</div>
+	</div>
 </Slide>
 
 <style>
 	img {
-		max-width: 24vw;
-
-		&:first-of-type {
-			position: relative;
-			left: -2vw
-		}
-
-		&:last-of-type {
-			position: relative;
-			right: -2vw;
-		}
+		max-width: 30vw;
 	}
 </style>
 
