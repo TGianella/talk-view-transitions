@@ -1,0 +1,40 @@
+---
+import Slide from "../../components/Slide.astro";
+import AnimatedCalendar from "../../assets/calendar-animated.mp4";
+import SchoolApp from "../../assets/school-app-animated.mp4";
+import MobileApp from "../../assets/mobile-app.mp4"
+---
+
+<Slide>
+		<video data-autoplay loop src={AnimatedCalendar}></video>
+		<p>Calendar UI interaction animation by Daniel Tan and Daphnie Loong</p>
+</Slide>
+
+<Slide>
+	<video data-autoplay loop src={SchoolApp}></video>
+	<p>Classmo – Virtual Classroom UI/UX by Daniel Tan and Daphnie Loong</p>
+</Slide>
+
+<Slide>
+	<video data-autoplay loop src={MobileApp}></video>
+	<p>iPhoneX – Todo concept by Jae-seong Jeong</p>
+</Slide>
+
+
+<style>
+	video {
+		max-width: 30vw;
+		border-radius: 20px;
+		border: 2px solid black;
+
+		&:last-of-type {
+			max-width: 15vw;
+			border: none;
+		}
+	}
+
+	p {
+		font-size: 0.3em;
+		color: dimgrey;
+	}
+</style>
