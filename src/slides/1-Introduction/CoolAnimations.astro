@@ -16,7 +16,7 @@ import MobileApp from "../../assets/mobile-app.mp4"
 </Slide>
 
 <Slide>
-	<video data-autoplay loop src={MobileApp}></video>
+	<video class="portrait" data-autoplay loop src={MobileApp}></video>
 	<p>iPhoneX – Todo concept by Jae-seong Jeong</p>
 </Slide>
 
@@ -27,7 +27,7 @@ import MobileApp from "../../assets/mobile-app.mp4"
 		border-radius: 20px;
 		border: 2px solid black;
 
-		&:last-of-type {
+		&.portrait {
 			max-width: 15vw;
 			border: none;
 		}
