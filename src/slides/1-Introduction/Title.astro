@@ -1,16 +1,27 @@
 ---
-
+import logo from "../../assets/logo_devoxx_france_2019_simple.png";
 ---
 
 <section data-background-iframe={"https://view-transition-demo-tgianellas-projects.vercel.app/shuffle"}>
 	<h1>L'API viewTransition : une révolution pour le web ?</h1>
-	<p>Théo Gianella - 04/02/2025</p>
+	<div>
+		<p>Théo Gianella - 17/04/2025</p>
+		<img src={logo.src}>
+	</div>
+
 </section>
 
 <style>
 	h1 {
 		font-size: 2em;
 		margin-bottom: 5vh;
+	}
+
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
 	}
 </style>
 

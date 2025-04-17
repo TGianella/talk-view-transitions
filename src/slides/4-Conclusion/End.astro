@@ -1,10 +1,59 @@
 ---
-import QRCode from "../../assets/url_bento.me.png"
+import QRCode from "../../assets/qr-code.png"
+import LogoZenika from "../../assets/Logo Zenika Horizontal_Noir.svg";
+import Portrait from "../../assets/portrait.png";
 ---
 
 <section data-background-iframe={"https://view-transition-demo-tgianellas-projects.vercel.app/shuffle"}>
-	<h2>Merci !</h2>
-	<img src={QRCode.src} />
+	<div class="wrapper">
+		<div class="left">
+			<img class="portrait" src={Portrait.src} />
+			<h1>Théo Gianella</h1>
+			<div class="job">
+				<span>Développeur front-end</span>
+				<img class="logo-zenika" src={LogoZenika.src} />
+			</div>
+		</div>
+		<img class="qr-code" src={QRCode.src} />
+	</div>
 </section>
 
 
+<style>
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.7em;
+
+		span {
+			font-weight: bold;
+		}
+
+		img {
+			max-width: 200px;
+		}
+	}
+
+	.qr-code {
+		max-width: 300px;
+		aspect-ratio: 1;
+		border: 2px solid black;
+		border-radius: 10px;
+	}
+
+	.portrait {
+		border-radius: 1000px;
+	}
+
+</style>

@@ -1,0 +1,63 @@
+---
+import angular from "../../assets/frameworks/angular.png";
+import next from "../../assets/frameworks/next.png";
+import astro from "../../assets/frameworks/astro.png";
+import vue from "../../assets/frameworks/vue.png";
+import nuxt from "../../assets/frameworks/nuxt.png";
+import reactRouter from "../../assets/frameworks/react-router.png";
+import Slide from "../../components/Slide.astro";
+---
+
+<Slide>
+	<div class="r-stack">
+		<img class="fragment" src={angular.src}>
+		<img class="fragment" src={next.src}>
+		<img class="fragment" src={astro.src}>
+		<img class="fragment" src={vue.src}>
+		<img class="fragment" src={nuxt.src}>
+		<img class="fragment" src={reactRouter.src}>
+	</div>
+</Slide>
+
+<style>
+	img {
+		position: relative;
+		border-radius: 5px;
+	}
+
+	img:nth-of-type(1) {
+		top: 45px;
+		left: -60px;
+		transform: rotate(6deg);
+	}
+
+	img:nth-of-type(2) {
+		top: -70px;
+		left: 30px;
+		transform: rotate(-4deg);
+	}
+
+	img:nth-of-type(3) {
+		top: 90px;
+		left: -80px;
+		transform: rotate(10deg);
+	}
+
+	img:nth-of-type(4) {
+		top: -55px;
+		left: 100px;
+		transform: rotate(-7deg);
+	}
+
+	img:nth-of-type(5) {
+		top: 60px;
+		left: 50px;
+		transform: rotate(5deg);
+	}
+
+	img:nth-of-type(6) {
+		top: -100px;
+		left: -40px;
+		transform: rotate(-8deg);
+	}
+</style>
