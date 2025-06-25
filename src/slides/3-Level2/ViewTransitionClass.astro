@@ -1,0 +1,57 @@
+---
+import Slide from "../../components/Slide.astro";
+import CodeBlock from "../../components/CodeBlock.astro";
+---
+
+<Slide>
+	<h2>View transition class</h2>
+
+	<div class="fragment">
+		<CodeBlock lang="CSS">
+			{
+				`::view-transition-old(card-E59292) {
+	height: 100%;
+}
+
+::view-transition-old(card-CCE592) {
+	height: 100%;
+}
+
+::view-transition-old(card-92D7E5) {
+	height: 100%;
+}
+
+...`
+			}
+		</CodeBlock>
+	</div>
+</Slide>
+
+<Slide>
+	<h2>View transition class</h2>
+
+	<div>
+		<CodeBlock lang="CSS">
+			{
+				`.card {
+	...
+	view-transition-class: card
+}`
+			}
+		</CodeBlock>
+	</div>
+</Slide>
+
+<Slide>
+	<h2>View transition class</h2>
+
+	<div>
+		<CodeBlock lang="CSS">
+			{
+				`::view-transition-old(.card) {
+	height: 100%;
+}`
+			}
+		</CodeBlock>
+	</div>
+</Slide>

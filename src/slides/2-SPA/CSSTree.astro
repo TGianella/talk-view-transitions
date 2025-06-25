@@ -7,11 +7,14 @@ import CodeBlock from "../../components/CodeBlock.astro";
 	<h2>Un arbre de pseudo-éléments</h2>
 	<CodeBlock lang="CSS">
 		{
-			`::view-transition
-└── ::view-transition-group(root)
-		└── ::view-transition-image-pair(root)
-				├── ::view-transition-old(root)
-				└── ::view-transition-new(root)`
+			`<html>
+	::view-transition
+	└── ::view-transition-group(root)
+			└── ::view-transition-image-pair(root)
+					├── ::view-transition-old(root)
+					└── ::view-transition-new(root)
+	...
+</html>`
 		}
 	</CodeBlock>
 </Slide>

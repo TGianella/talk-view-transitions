@@ -10,7 +10,9 @@ import CodeBlock from "../../components/CodeBlock.astro";
 	<h2>Utiliser la viewTransition en SPA</h2>
 	<CodeBlock lang="javascript">
 		{
-			`document.startViewTransition(updateTheDOM);`
+			`document.startViewTransition(() => {
+  // Update the DOM somehow.
+});`
 		}
 	</CodeBlock>
 </Slide>
