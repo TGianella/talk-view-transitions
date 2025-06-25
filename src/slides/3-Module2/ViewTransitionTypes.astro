@@ -1,0 +1,76 @@
+---
+import Slide from "../../components/Slide.astro";
+import CodeBlock from "../../components/CodeBlock.astro";
+---
+<Slide>
+	<h2>Autres nouveautés du module 2</h2>
+</Slide>
+
+<Slide>
+	<h2>View transition types</h2>
+
+	<div class="fragment">
+		<CodeBlock lang="ts">
+			{
+				`const direction = page < activePage ? 'backwards' : 'forwards';
+
+document.startViewTransition({
+	update: () => {
+		setActivePage(page)
+	},
+	types: ['slide', direction]
+})`
+			}
+		</CodeBlock>
+	</div>
+</Slide>
+
+<Slide>
+	<h2>View transition types</h2>
+
+		<CodeBlock lang="CSS">
+			{
+				`html:active-view-transition-type(forwards, backwards) {
+	:root, div.card {
+		view-transition-name: none !important;
+	}
+
+	div.cards-list {
+		view-transition-name: content;
+	}
+}`
+			}
+		</CodeBlock>
+</Slide>
+
+<Slide>
+	<h2>View transition types</h2>
+
+		<CodeBlock lang="CSS">
+			{
+				`html:active-view-transition-type(forwards) {
+	&::view-transition-old(content) {
+		animation-name: slide-out-to-left;
+	}
+	&::view-transition-new(content) {
+		animation-name: slide-in-from-right;
+	}
+}
+
+html:active-view-transition-type(backwards) {
+	&::view-transition-old(content) {
+		animation-name: slide-out-to-right;
+	}
+	&::view-transition-new(content) {
+		animation-name: slide-in-from-left;
+	}
+}`
+			}
+		</CodeBlock>
+</Slide>
+
+<style>
+	h2 {
+		font-size: 1.4em;
+	}
+</style>

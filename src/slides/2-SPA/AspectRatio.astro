@@ -1,0 +1,35 @@
+---
+import Slide from "../../components/Slide.astro";
+import CodeBlock from "../../components/CodeBlock.astro";
+---
+
+<Slide>
+	<h2>Aspect ratio</h2>
+			<CodeBlock lang="css">
+				{
+					`    ::view-transition-group {
+        position: absolute;
+    }
+
+    ::view-transition-new, ::view-transition-old {
+			position: absolute;
+			inset-block-start: 0px;
+			inline-size: 100%;
+			block-size: auto;
+    }`
+				}
+			</CodeBlock>
+</Slide>
+
+<Slide>
+	<h2>Aspect ratio</h2>
+	<CodeBlock lang="css">
+		{
+			`
+    ::view-transition-new(*),
+    ::view-transition-old(*) {
+			height: 100%;
+    }`
+		}
+	</CodeBlock>
+</Slide>

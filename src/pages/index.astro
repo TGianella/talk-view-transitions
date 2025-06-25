@@ -11,7 +11,7 @@ import DemoDefaultTransition from "../slides/2-SPA/DemoDefaultTransition.astro";
 import Imperative from "../slides/2-SPA/Imperative.astro";
 import DemoCustomTransition from "../slides/2-SPA/DemoCustomTransition.astro";
 import ViewTransitionName from "../slides/2-SPA/ViewTransitionName.astro";
-import Baseline from "../slides/4-Conclusion/Baseline.astro";
+import Baseline from "../slides/2-SPA/Baseline.astro";
 import ProgressiveEnhancement from "../slides/4-Conclusion/ProgressiveEnhancement.astro";
 import CSSTree from "../slides/2-SPA/CSSTree.astro";
 import NamesEverywhere from "../slides/2-SPA/NamesEverywhere.astro";
@@ -19,13 +19,13 @@ import DemoTransitionHeader from "../slides/2-SPA/DemoTransitionHeader.astro";
 import ViewTransitionGroup from "../slides/2-SPA/ViewTransitionGroup.astro";
 import DemoTransitionCards from "../slides/2-SPA/DemoTransitionCards.astro";
 import DemoTransitionFeature from "../slides/2-SPA/DemoTransitionFeature.astro";
-import DemoTransitionMPA from "../slides/3-MPA/DemoTransitionMPA.astro";
+import DemoTransitionMPA from "../slides/3-Module2/DemoTransitionMPA.astro";
 import CustomTransitionCode from "../slides/2-SPA/CustomTransitionCode.astro";
 import CardViewTransitionName from "../slides/2-SPA/CardViewTransitionName.astro";
 import FeatureViewTransitionName from "../slides/2-SPA/FeatureViewTransitionName.astro";
 import NamesGuidelines from "../slides/2-SPA/NamesGuidelines.astro";
 import Lifecycle from "../slides/2-SPA/Lifecycle.astro";
-import Declarative from "../slides/3-MPA/Declarative.astro";
+import Declarative from "../slides/3-Module2/Declarative.astro";
 import Frameworks from "../slides/4-Conclusion/Frameworks.astro";
 import PlotTwist from "../slides/4-Conclusion/PlotTwist.astro";
 import Perspectives from "../slides/4-Conclusion/Perspectives.astro";
@@ -36,6 +36,11 @@ import CoolAnimations from "../slides/1-Introduction/CoolAnimations.astro";
 import FlipAnimations from "../slides/1-Introduction/FlipAnimations.astro";
 import CrossDocumentAnimation from "../slides/1-Introduction/CrossDocumentAnimation.astro";
 import FrameworksDocs from "../slides/4-Conclusion/FrameworksDocs.astro";
+import CustomTransitionEntryExit from "../slides/2-SPA/CustomTransitionEntryExit.astro";
+import DemoTransitionAspectRatio from "../slides/2-SPA/DemoTransitionAspectRatio.astro";
+import AspectRatio from "../slides/2-SPA/AspectRatio.astro";
+import ViewTransitionTypes from "../slides/3-Module2/ViewTransitionTypes.astro";
+import DemoTransitionTypes from "../slides/3-Module2/DemoTransitionTypes.astro";
 ---
 
 <Layout title="L'API viewTransition : une révolution pour le web ?">
@@ -58,8 +63,8 @@ import FrameworksDocs from "../slides/4-Conclusion/FrameworksDocs.astro";
 			<DemoDefaultTransition />
 			<CSSTree />
 			<CustomTransitionCode />
-			<DemoCustomTransition />
 			<CustomTransitionQueries />
+			<DemoCustomTransition />
 			<ViewTransitionName />
 			<DemoTransitionHeader />
 			<ViewTransitionGroup />
@@ -69,13 +74,18 @@ import FrameworksDocs from "../slides/4-Conclusion/FrameworksDocs.astro";
 			<NamesGuidelines />
 			<Lifecycle />
 			<FeatureViewTransitionName />
+			<CustomTransitionEntryExit />
 			<DemoTransitionFeature />
-			<!-- 2. MPA -->
-			<Declarative />
-			<DemoTransitionMPA />
-			<!-- Conclusion -->
+			<AspectRatio />
+			<DemoTransitionAspectRatio />
 			<Baseline />
 			<ProgressiveEnhancement />
+			<!-- 2. Module 2: MPA + improvements -->
+			<Declarative />
+			<DemoTransitionMPA />
+			<ViewTransitionTypes />
+			<DemoTransitionTypes />
+			<!-- Conclusion -->
 			<Frameworks />
 			<PlotTwist />
 			<FrameworksDocs />
