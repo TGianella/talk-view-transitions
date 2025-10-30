@@ -4,6 +4,7 @@ import next from "../../assets/frameworks/next.png";
 import astro from "../../assets/frameworks/astro.png";
 import vue from "../../assets/frameworks/vue.png";
 import nuxt from "../../assets/frameworks/nuxt.png";
+import react from "../../assets/frameworks/react.png";
 import reactRouter from "../../assets/frameworks/react-router.png";
 import Slide from "../../components/Slide.astro";
 ---
@@ -15,6 +16,7 @@ import Slide from "../../components/Slide.astro";
 		<img class="fragment" src={astro.src}>
 		<img class="fragment" src={vue.src}>
 		<img class="fragment" src={nuxt.src}>
+		<img class="fragment" src={react.src}>
 		<img class="fragment" src={reactRouter.src}>
 	</div>
 </Slide>
@@ -56,8 +58,14 @@ import Slide from "../../components/Slide.astro";
 	}
 
 	img:nth-of-type(6) {
-		top: -100px;
+		top: 0;
 		left: -40px;
 		transform: rotate(-8deg);
+	}
+
+	img:nth-of-type(7) {
+		top: 30px;
+		left: 10px;
+		transform: rotate(8deg);
 	}
 </style>
